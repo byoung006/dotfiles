@@ -1,0 +1,53 @@
+# Fonts
+font-family = "JetBrains Mono"
+font-family-bold = "JetBrains Mono Bold"
+font-family-italic = "JetBrains Mono Italic"
+font-family-bold-italic = "JetBrains Mono Italic"
+font-family = "Symbols Nerd Font Mono"
+font-size = 14
+adjust-underline-position = 4
+adjust-cell-height = 25%
+
+# Mouse
+mouse-hide-while-typing = true
+# mouse-scroll-multiplier = 1
+
+# Theme
+background-opacity = 0.9
+window-theme = ghostty
+theme = catppuccin-mocha
+background-blur = 5
+
+# keybindings
+keybind = clear
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+l=goto_split:right
+keybind = super+shift+t=new_tab
+keybind = super+shift+h=previous_tab
+keybind = super+shift+l=next_tab
+keybind = super+shift+comma=move_tab:-1
+keybind = super+shift+period=move_tab:1
+keybind = super+shift+c=copy_to_clipboard
+keybind = super+shift+v=paste_from_clipboard
+keybind = super+shift+enter=new_split:auto
+keybind = super+shift+i=inspector:toggle
+keybind = super+shift+m=toggle_split_zoom
+keybind = super+shift+r=reload_config
+keybind = super+shift+s=write_screen_file:open
+keybind = super+shift+w=close_surface
+
+# Window
+gtk-tabs-location = bottom
+gtk-wide-tabs = false
+gtk-titlebar= true
+window-padding-balance = true
+window-decoration = auto
+
+# Other
+copy-on-select = clipboard
+cursor-style-blink=false
+shell-integration-features = title,no-cursor
+cursor-invert-fg-bg = true
+cursor-style = block

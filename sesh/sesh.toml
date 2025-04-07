@@ -1,0 +1,24 @@
+[[session]]
+name = "tmux-config ⚙️  "
+path = "~/"
+startup_command = "nvim .tmux.conf"
+
+[[session]]
+name = "nvim-config ⚙️  "
+path = "~/.config/nvim/"
+startup_command = "nvim init.lua"
+
+[[session]]
+name = "ghostty-config ⚙️  "
+path = "~/.config/ghostty/"
+startup_command = "nvim config"
+
+[[session]]
+name = "personal-repos ⚙️  "
+path = "~/personal-repos/"
+startup_command = "ff"
+
+# [[session]]
+# name = "hooked-on-the-koots"
+# path = "~/personal-repos/hooked-on-the-koots/hooked-on-the-koots/"
+# startup_command = "ff"
