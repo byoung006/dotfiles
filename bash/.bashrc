@@ -117,11 +117,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
- eval "$(starship init bash)"
+eval "$(starship init bash)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 unset SSH_AGENT_PID
 
@@ -144,10 +143,6 @@ unset color_prompt force_color_prompt
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 . "$HOME/.cargo/env"
-export PATH=$HOME/cmus/bin:$PATH
-export PATH=$HOME/sesh/bin:$PATH
-export PATH=$HOME/.local/bin/tmux-sessionizer.sh:$PATH
-export PATH="$PATH:$HOME/.local/bin"
 cdnvm() {
     command cd "$@" || return $?
     nvm_path=$(nvm_find_up .nvmrc | tr -d '\n')
@@ -295,7 +290,6 @@ alias fd=fd
 alias sls=sesh_list_sessions
 alias tls=tmux_list_sessions
 alias tks=tmux_kill_multiple_sessions
-alias sourcebash='source ~/.bashrc'
 # bind -x "\C-f": "./tmux-sessionizer.sh\n"
 bind -x '"\C-f":"tmux-sessionizer.sh"'
 REACT_APP_API_HOST=https://localhost:8000/api
@@ -306,3 +300,9 @@ export VISUAL=nvim
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(zoxide init --cmd z bash)"
 export PATH="$PATH:$HOME/.local/bin"
+export NVM_DIR="$HOME/.nvm"
+export PATH=$HOME/cmus/bin:$PATH
+export PATH=$HOME/sesh/bin:$PATH
+export PATH=$HOME/.local/bin/tmux-sessionizer.sh:$PATH
+export PATH="$PATH:$HOME/.local/bin"
+export STOW_FOLDERS="bin,nvim,tmux,bash,ghostty,sesh,starship"

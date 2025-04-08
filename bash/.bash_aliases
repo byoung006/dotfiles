@@ -11,6 +11,8 @@ alias gs='git status'
 alias gf='git fetch'
 alias gpl='git pull'
 alias gp='git push'
+# lolz
+alias yolo='git push orign master --force'
 alias lg='lazygit'
 alias nvimconfig='cd ~/.config/nvim/'
 alias l='ls'
