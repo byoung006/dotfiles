@@ -42,7 +42,7 @@ Here's a breakdown of the key configurations you'll find in this repository:
 
 `chmod +x install.sh` 
 
-> **Warning:** This bootstraps my own preferences, make sure you want what's in the `packages.conf` file before running the install
+> **Warning:** This bootstraps my own preferences, make sure you want what's in the `packages.conf` file before running the install, or alternatively, you can add in your own `apt` packages.
 
 `./install.sh`
 
